@@ -3,7 +3,8 @@
 #include<stdlib.h>
 int main()
  {
-   int a,n,i,j,p[20],pp[20],bt[20],tq;
+   int a,n,i,j;
+   int p[20],pp[20],bt[20],tq;
  
    printf("Enter number of process : ");
    scanf("%d",&n);
