@@ -1,8 +1,9 @@
 #include<stdio.h>
 #include<conio.h>
+#include<stdlib.h>
 int main()
  {
-   int x,n,p[10],pp[10],bt[10],i,tq,j;
+   int a,n,i,j,p[20],pp[20],bt[20],tq;
  
    printf("Enter number of process : ");
    scanf("%d",&n);
@@ -23,15 +24,15 @@ int main()
      {
        if(pp[i]<pp[j])
        {
-     x=pp[i];
+     a=pp[i];
      pp[i]=pp[j];
-     pp[j]=x;
-     x=bt[i];
+     pp[j]=a;
+     a=bt[i];
      bt[i]=bt[j];
-     bt[j]=x;
-     x=p[i];
+     bt[j]=a;
+     a=p[i];
      p[i]=p[j];
-     p[j]=x;
+     p[j]=a;
       }
       
    }
