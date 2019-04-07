@@ -38,3 +38,8 @@ int main()
       
    }
 }
+printf("\n Gantt chart \n");
+for(i=0;i<n;i++)
+{
+	printf("P %d",p[i]);
+}
