@@ -6,15 +6,15 @@ int main()
    int a,n,i,j;
    int p[20],pp[20],bt[20],tq,wt[20],tat[20],avgwt,avgtat,at[20];
  
-   printf("Enter number of process: ");
+   printf("Enter no of process: ");
    scanf("%d",&n);
    printf("Enter time quantum:");
    scanf("%d",&tq);
-   printf("\n\t Enter burst time,time priorities,Arrival time  \n");
+   printf("\nEnter burst time,time priorities,Arrival time \n");
  
    for(i=0;i<n;i++)
     {
-      printf("\n Process %d ",i+1);
+      printf("\n Process%d ",i+1);
       scanf("%d %d %d",&bt[i],&pp[i],&at[i]);
 	  p[i]=i+1;
     }
@@ -41,7 +41,7 @@ int main()
 printf("\n Gantt chart \n");
 for(i=0;i<n;i++)
 {
-	printf("P %d",p[i]);
+	printf("P%d",p[i]);
 }
 
 for(i=0;i<n;i++)
