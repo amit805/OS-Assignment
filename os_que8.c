@@ -4,13 +4,13 @@
 int main()
  {
    int a,n,i,j;
-   int p[20],pp[20],bt[20],tq;
+   int p[20],pp[20],bt[20],tq,wt[20],tat[20],avgwt,avgtat,at[20];
  
-   printf("Enter number of process : ");
+   printf("Enter number of process: ");
    scanf("%d",&n);
-   printf("Enter time quantum");
+   printf("Enter time quantum:");
    scanf("%d",&tq);
-   printf("\n\t Enter burst time : time priorities : Arrival time  \n");
+   printf("\n\t Enter burst time,time priorities,Arrival time  \n");
  
    for(i=0;i<n;i++)
     {
@@ -42,4 +42,20 @@ printf("\n Gantt chart \n");
 for(i=0;i<n;i++)
 {
 	printf("P %d",p[i]);
+}
+
+for(i=0;i<n;i++)
+{
+printf("\n  %d",p[i]); 
+printf("\t\t %d",bt[i]);
+printf("\t\t %d",wt[i]);
+printf("\t\t %d",tat[i]);
+printf("\t\t %d",pp[i]);
+printf("\t\t %d",at[i]);
+}
+avgwt/=n;
+avgtat/=n;
+printf("\n Average Wait Time : %d ",avgwt);
+printf("\n Average Turn Around Time : %d",avgtat);
+getch();
 }
