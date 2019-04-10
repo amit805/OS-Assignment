@@ -38,7 +38,22 @@ int main()
       
    }
 }
-printf("\n Gantt chart \n");
+wt[0]=0;
+avgwt=0;
+tat[0]=bt[0];
+avgtat=tat[0];
+for(i=1;i<n;i++)
+ {
+    if(tq<n || tq>n) 
+	{
+     wt[i]=tat[i-1];
+     avgwt+=wt[i];
+     tat[i]=wt[i]+bt[i];
+     avgtat+=tat[i];
+    }
+ }
+
+printf("\n Required Gantt chart is: \n");
 for(i=0;i<n;i++)
 {
 	printf("P%d",p[i]);
